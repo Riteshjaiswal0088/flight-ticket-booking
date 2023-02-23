@@ -1,7 +1,6 @@
 package com.ritesh.flightticketbooking.controller;
 
 import com.ritesh.flightticketbooking.dto.AddressDto;
-import com.ritesh.flightticketbooking.dto.mapper.AddressMapper;
 import com.ritesh.flightticketbooking.dto.request.AddressRequest;
 import com.ritesh.flightticketbooking.service.AddressService;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +17,7 @@ public class AddressController {
 
     private final AddressService addressService;
 
-    @GetMapping("/addresses")
+    @GetMapping("/addresses")// /api/a1/addresses
     public ResponseEntity<List<AddressDto>> getAddress() {
 
         return ResponseEntity.ok(addressService.getAllAddresses());

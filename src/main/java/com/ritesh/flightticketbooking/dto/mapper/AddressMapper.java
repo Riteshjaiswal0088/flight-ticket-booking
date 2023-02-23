@@ -6,7 +6,7 @@ import com.ritesh.flightticketbooking.entity.Address;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper(componentModel = "spring")
+@Mapper//(componentModel = "spring")
 public interface AddressMapper {
 
     AddressMapper ADDRESS_MAPPER = Mappers.getMapper(AddressMapper.class);
