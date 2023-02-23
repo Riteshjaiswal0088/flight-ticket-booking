@@ -17,7 +17,7 @@ public class AddressController {
 
     private final AddressService addressService;
 
-    @GetMapping("/addresses")// /api/a1/addresses
+    @GetMapping("/addresses")
     public ResponseEntity<List<AddressDto>> getAddress() {
 
         return ResponseEntity.ok(addressService.getAllAddresses());
